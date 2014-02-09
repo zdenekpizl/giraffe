@@ -40,9 +40,9 @@ var dashboards =
         "alias": "System Load",
         "targets": [
             {'target': 'aliasByNode(servers.dev-cmp06.system.load.load,1)',
-                'color': 'rgba(255,0,0,0.2)', 'renderer': 'bar', 'alias': 'dev-cmp06'},
+                'color': 'rgba(160,0,0,0.2)', 'renderer': 'bar', 'alias': 'dev-cmp06'},
             {'target': 'alias(movingAverage(servers.dev-cmp06.system.load.load,5),' +
-                '"Moving Average of 5 segments")', 'color': 'rgba(128,99,99,0.6)', 'alias': 'Moving Average of 5 segments',
+                '"Moving Average of 5 segments")', 'color': 'rgba(255,0,0,0.6)', 'alias': 'Moving Average of 5 segments',
                 'renderer': 'line'}
         ],
 
@@ -53,8 +53,7 @@ var dashboards =
         "description": "",
         "interpolation": "linear",
         "renderer": 'multi',
-        "colspan": 2,
-        "unstack": true,
+        "colspan": 2
       },
 
       /* Graph 1 */
